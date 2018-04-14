@@ -1,0 +1,196 @@
+------------------------------------------------------------------------
+r1751 | shefki | 2008-10-13 23:54:23 +0000 (Mon, 13 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/HealthBar/HealthBar.lua
+
+- Update the healthbar on a more regular basis to match DogTag's timing.
+
+------------------------------------------------------------------------
+r1750 | shefki | 2008-10-13 20:51:10 +0000 (Mon, 13 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/Spark/Spark.lua
+
+- No longer Spark for energy ticks 3.x clients since it ticks constantly.
+
+------------------------------------------------------------------------
+r1749 | shefki | 2008-10-13 20:31:52 +0000 (Mon, 13 Oct 2008) | 3 lines
+Changed paths:
+   M /trunk/PowerBar/PowerBar.lua
+
+- Update the PowerBar on a more regular basis for the player and pet frames,
+matching the default UI's behavior.
+
+------------------------------------------------------------------------
+r1748 | ckknight | 2008-10-13 18:22:06 +0000 (Mon, 13 Oct 2008) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/embeds.xml
+
+remove LibMobHealth-4.0, it has issues and is going away for WoW 3.0 anyway
+------------------------------------------------------------------------
+r1747 | shefki | 2008-10-13 00:44:57 +0000 (Mon, 13 Oct 2008) | 3 lines
+Changed paths:
+   M /trunk/DruidManaBar/DruidManaBar.lua
+
+PitBull_DruidManaBar: No longer use LibDruidMana for Wrath since UnitPower() will let us
+ask for mana even when we have a rage or energy bar.
+
+------------------------------------------------------------------------
+r1746 | ckknight | 2008-10-12 23:15:12 +0000 (Sun, 12 Oct 2008) | 1 line
+Changed paths:
+   D /trunk/pitbulllod.bat
+   D /trunk/pitbulllod.sh
+
+remove bat and sh files
+------------------------------------------------------------------------
+r1744 | stanzilla | 2008-10-09 23:13:20 +0000 (Thu, 09 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/modules.xml
+
+PitBull
+- Add @debug@ keyword
+------------------------------------------------------------------------
+r1743 | stanzilla | 2008-10-09 20:32:16 +0000 (Thu, 09 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/.pkgmeta
+   M /trunk/PitBull.toc
+
+PitBull
+- clean up toc and add no-lib-strip
+------------------------------------------------------------------------
+r1742 | stanzilla | 2008-10-09 20:23:50 +0000 (Thu, 09 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/.pkgmeta
+
+PitBull
+- move folders with .pkgmeta
+------------------------------------------------------------------------
+r1741 | shefki | 2008-10-07 19:55:21 +0000 (Tue, 07 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/ThreatBar/ThreatBar.lua
+
+- Remove pre-WoW 2.4 compat code.
+
+------------------------------------------------------------------------
+r1740 | 7destiny | 2008-10-07 16:39:52 +0000 (Tue, 07 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/libs
+
+PitBull
+- externals update
+------------------------------------------------------------------------
+r1739 | nevcairiel | 2008-10-02 17:22:56 +0000 (Thu, 02 Oct 2008) | 1 line
+Changed paths:
+   D /trunk/filelist.wau
+
+Remove WAU support files
+------------------------------------------------------------------------
+r1738 | nevcairiel | 2008-10-02 08:54:55 +0000 (Thu, 02 Oct 2008) | 2 lines
+Changed paths:
+   M /trunk/.pkgmeta
+
+Fix .pkgmeta
+
+------------------------------------------------------------------------
+r1737 | root | 2008-09-30 16:06:52 +0000 (Tue, 30 Sep 2008) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+
+Hopefully fix .pkgmeta
+------------------------------------------------------------------------
+r1736 | root | 2008-09-30 15:00:26 +0000 (Tue, 30 Sep 2008) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+
+Hopefully fix .pkgmeta
+------------------------------------------------------------------------
+r1735 | root | 2008-09-29 21:39:47 +0000 (Mon, 29 Sep 2008) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+   M /trunk/libs
+
+Facilitate WowAce-on-CurseForge transition
+------------------------------------------------------------------------
+r1733 | root | 2008-09-29 20:58:29 +0000 (Mon, 29 Sep 2008) | 1 line
+Changed paths:
+   D /tmp/trunk/PitBull
+   A /trunk (from /tmp/trunk/PitBull:1732)
+
+Importing old repo data under /trunk
+------------------------------------------------------------------------
+r1732 | ellipsis | 2008-09-20 09:24:41 +0000 (Sat, 20 Sep 2008) | 1 line
+Changed paths:
+   M /tmp/trunk/PitBull/PitBull_MetaLayout.lua
+
+PitBull: DogTag syntax fix for 'smart' style power tags
+------------------------------------------------------------------------
+r1731 | shefki | 2008-09-20 09:08:00 +0000 (Sat, 20 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/PitBull/Aura/Frames.lua
+
+PitBull_Aura: Fix to allow canceling of auras in WoTLK again.
+
+------------------------------------------------------------------------
+r1730 | gnarfoz | 2008-09-20 00:06:30 +0000 (Sat, 20 Sep 2008) | 1 line
+Changed paths:
+   M /tmp/trunk/PitBull/Aura/Filter.lua
+
+PitBull: n ~= m
+------------------------------------------------------------------------
+r1729 | shefki | 2008-09-19 05:36:41 +0000 (Fri, 19 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/PitBull/Aura/Filter.lua
+
+PitBull_Aura: Warlock Aura Changes for WoTLK (FelHunter Auras and remove Curse of Shadow)
+
+------------------------------------------------------------------------
+r1728 | shefki | 2008-09-19 05:20:56 +0000 (Fri, 19 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/PitBull/Aura/Filter.lua
+
+PitBull_Aura: Palladin Auras for WoTLK updated.
+
+------------------------------------------------------------------------
+r1727 | shefki | 2008-09-19 05:11:25 +0000 (Fri, 19 Sep 2008) | 3 lines
+Changed paths:
+   M /tmp/trunk/PitBull/Aura/Filter.lua
+
+PitBull_Aura: Deal with a couple of removed Shaman totems for WoTLK and simplify the Find
+  Weakness compatability handler.
+
+------------------------------------------------------------------------
+r1726 | shefki | 2008-09-19 05:04:47 +0000 (Fri, 19 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/PitBull/Aura/Filter.lua
+
+PitBull_Aura: Priest Racials in WoTLK have changed.
+
+------------------------------------------------------------------------
+r1725 | shefki | 2008-09-19 04:58:37 +0000 (Fri, 19 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/PitBull/Aura/Filter.lua
+
+PitBull_Aura: WoTLK changes for Rogues, Find Weakness and Poisons.
+
+------------------------------------------------------------------------
+r1724 | shefki | 2008-09-18 22:52:22 +0000 (Thu, 18 Sep 2008) | 2 lines
+Changed paths:
+   M /tmp/trunk/PitBull/Aura/Core.lua
+   M /tmp/trunk/PitBull/Aura/Filter.lua
+   M /tmp/trunk/PitBull/Aura/Frames.lua
+
+PitBull_Aura: Shadowmeld has a new spellid in WoTLK.
+
+------------------------------------------------------------------------
+r1723 | ulic | 2008-09-13 21:34:03 +0000 (Sat, 13 Sep 2008) | 1 line
+Changed paths:
+   M /tmp/trunk/PitBull/Portrait/Portrait.lua
+
+PitBull: Portrait- Added coordinates for DEATHKNIGHT class icon.
+------------------------------------------------------------------------
+r1722 | ellipsis | 2008-08-30 16:01:54 +0000 (Sat, 30 Aug 2008) | 1 line
+Changed paths:
+   M /tmp/trunk/PitBull/PitBull.lua
+
+PitBull: Needs less PLAYER_PET_CHANGED. (Why is this still here 3 months after being reported?)
+------------------------------------------------------------------------
