@@ -111,6 +111,7 @@ function PitBull_VisualHeal:OnEnable()
 	LibHealComm.RegisterCallback(self, "HealComm_DirectHealStart")
 	LibHealComm.RegisterCallback(self, "HealComm_DirectHealUpdate")
 	LibHealComm.RegisterCallback(self, "HealComm_DirectHealStop")
+	LibHealComm.RegisterCallback(self, "HealComm_DirectHealInterrupt")
 	LibHealComm.RegisterCallback(self, "HealComm_HealModifierUpdate")
 end
 
@@ -415,6 +416,19 @@ function PitBull_VisualHeal:HealComm_DirectHealUpdate(event, healerName, healSiz
 end
 
 function PitBull_VisualHeal:HealComm_DirectHealStop(event, healerName, healSize, succeeded, ...)
+	if healerName == playerName then
+		playerIsCasting = false
+	end
+
+	for i = 1, select('#', ...) do
+		local targetName = select(i, ...)
+		for frame in PitBull:IterateUnitFramesForUnitName(targetName) do
+			self:UpdateBars(frame:GetUnit(), frame)
+		end
+	end
+end
+
+function PitBull_VisualHeal:HealComm_DirectHealInterrupt(event, healerName, healSize, succeeded, ...)
 	if healerName == playerName then
 		playerIsCasting = false
 	end
